@@ -11,7 +11,14 @@ def eh_quadrada(matriz):
 
 def multiplicar_matrizes(m1, m2):
     n = len(m1)
-    resultado = [[0]*n for _ in range(n)]
+    resultado = []
+
+    for i in range(n):
+        linha = []
+        for j in range(n):
+            linha.append(0)
+        resultado.append(linha)
+
     print("Multiplicação passo a passo:")
     for i in range(n):
         for j in range(n):
